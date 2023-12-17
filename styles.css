@@ -1,2 +1,21 @@
+/* CSS Code */
+#holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-/* Your CSS Code here. */
+/* Optional: Style for the items */
+#holder > * {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width of each item as needed, subtracting margin */
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+/* Additional styling for better visualization (optional) */
+#holder > * {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
